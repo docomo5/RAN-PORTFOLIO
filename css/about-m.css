@@ -1,0 +1,215 @@
+/* mobile.css */
+:root{
+    --c-main: #54ABFC;
+    --c-secondary: rgba(3, 128, 244, 0.5);
+    --c-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25);
+    --c-background: rgba(196, 196, 196, 0.33);
+    --c-background-dark: rgba(196, 196, 196, 0.82);
+  }
+
+  body{
+    background:#fff;
+    height: 100%;
+    width: 100%;
+  }
+/* pc전용 콘텐츠 비표시 */
+.pc-only {
+    display: none;
+}
+
+
+    main{
+      height: 100vh;
+    }
+  
+    header{
+      position: fixed;
+      width: 100%;
+      height: 90px;
+      background-color: var(--c-background);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      animation-name: header;
+      animation-duration: 1s;
+    }
+  
+    @keyframes header{
+      from{
+        transform: translateY(-90px);
+      }
+      to{
+        transform: translateY(0);
+      }
+    }
+  
+    .header{
+      margin: 0 auto;
+      height: 90px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1440px;
+    }
+  
+    .header > img {
+      margin-left: 46px;
+    }
+  
+    .header > ul  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 800px;
+    }
+   
+    
+    .header > ul > li > a{
+      color: #000;
+      width: 188px;
+      height: 50px;  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 188px;
+      height: 50px;
+    }
+  
+    .header > ul > li:hover {
+     background-image: url(../images/—Pngtree—colorful\ ink\ watercolor\ painting\ vector_1813278\ 1.png);
+    }
+    
+    .header > ul > li > a:hover {
+      color: aliceblue;
+    }
+    
+    .header > ul > li:focus {
+      background-image: url(../images/—Pngtree—colorful\ ink\ watercolor\ painting\ vector_1813278\ 1.png);
+    }
+    
+    .header > ul > li > a:active {
+      color: aliceblue;
+    }
+  
+    .abouts {
+      /* outline: 1px solid red; */
+      margin: 0px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1440px;
+    }
+    
+    .about-title{
+      margin-top:15%;
+      /* margin-bottom:15%; */
+      /* margin-left: 27px; 
+      margin-right: 27px; */
+      min-width: 1342px;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      /* outline: 1px solid red; */
+    }
+    
+    .abouttext {
+      flex-direction: column;
+      /* outline: 1px solid red; */
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      margin-left: 40px;
+      min-height: 451px;
+      min-width: 623px;
+      animation-duration: 1s;
+      animation-name: slidein;
+      animation-timing-function: linear;
+      /* animation-iteration-count: infinite; */
+      animation-direction: alternate;
+    }
+  
+    .about-title >h1 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  
+    .about-title > p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  
+    @keyframes slidein {
+      0% {
+        margin-left: 150%;
+      }
+    
+      60% {
+        margin-left:-80px;
+      }
+  
+      100% {
+        margin-left: 40px;
+      }
+    }
+  
+  .skill{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }  
+  
+  .charts{
+    top: 90%;
+    margin:140px auto;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .charts .chart{
+    margin: 0 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .charts .chart h2{
+    position: absolute;
+    transform: scale(70%);
+  }
+  
+  .charts .chart svg{
+    width: 120px;
+    height: 120px;
+  }
+  
+  circle{
+    fill: var(--c-background);
+    stroke-width: 15;
+    stroke: var(--c-main);
+    stroke-dasharray: 312;
+    stroke-dashoffset: 312;
+    /* animation: line 2s forwards; */
+    transform: rotate(-90deg);
+    transform-origin:50% 50%;
+    stroke-linecap: round;
+  }
+  
+  /* @keyframes line {
+    from {
+      stroke-dashoffset: 312;
+    }
+    to{
+      stroke-dashoffset:0;
+    }
+  } */
+  
+  
+    
+  
+  

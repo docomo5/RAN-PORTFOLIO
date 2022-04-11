@@ -1,0 +1,121 @@
+/* mobile.css */
+body {
+    background: rgba(196, 196, 196, 0.33);
+}
+
+/* pc전용 콘텐츠 비표시 */
+.pc-only {
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.animate__animated.animate__bounceInDown > a >img{
+  position: absolute;
+  top: 45vh;
+  left: 50%; 
+  transform: translateX(-50%);
+  /* transition: 10s; */
+}
+
+.shadow > img{
+  /* outline: 1px solid red; */
+  position: absolute;
+  top: 60vh;
+  left: 50%; 
+  transform: translateX(-50%);
+  /* animation-name: shadow; */
+  /* transition: 1s; */
+  animation: shadow 1s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+      width: 20px;
+  }
+  70%{
+      width: 67px;
+  }
+  72%{
+      width: 55px;
+  }
+  74%{
+      width: 50px;
+  }
+
+  100% {
+      /* opacity: 1; */
+      width: 67px;
+  }
+}
+
+.shape > img {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.border{
+    position: relative;
+    margin-left: 22px;
+    margin-top: 19px;
+    width: calc(100% - 44px);
+    height: calc(100vh - 38px);
+    transition: 1s;
+    transform: 1s;
+    /* border: 1px solid red; */
+  }
+  /* .border:hover{
+    background: rgba(0,0,0,0.2);
+  } */
+  .border > span{ 
+    display: block;
+    transition: 1s;
+    border-radius: 40px;
+    animation-name: span;
+    animation-duration: 2s;
+  }
+  .border .top{
+    position: absolute;
+    left: 0; top: 0;
+    border-top: 5px solid #fff;
+    width: 100%;
+  }
+  .border .right{
+    position: absolute;
+    right: 0; top: 0;
+    border-right: 5px solid #fff;
+    height: 100%;
+  }
+  .border .bottom{
+    position: absolute;
+    right: 0; bottom: 0;
+    border-bottom: 5px solid #fff;
+    width: 100%;
+  }
+  .border .left{
+    position: absolute;
+    left: 0; bottom: 0;
+    border-left: 5px solid #fff;
+    height: 100%;
+  }
+ 
+  @keyframes span {
+      from{
+          width: 0;
+          height: 0;
+      }
+      to{
+          border: 5px solid #fff;
+          width: 100%;
+          height: 100%;
+      }
+  }
+ 
