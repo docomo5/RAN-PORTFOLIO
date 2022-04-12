@@ -1,94 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/about-m.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="css/about-p.css" media="screen and (min-width: 768px)">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/about-m.css" media="screen and (max-width: 767px)">
+  <link rel="stylesheet" href="css/about-p.css" media="screen and (min-width: 768px)">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
+
 <body>
   <main>
-  <header>
-    <div class="header">
-    <a href="index.html"><img src="images/Subtract.png" alt="logo"></a>
-    <ul class="pc-only">
-      <li><a href="">ABOUT</a></li>
-      <li><a href="">PORTFOLIO</a></li>
-      <li><a href="">CONTACT</a></li>
-    </ul>
-    </div>
-  </header>
-  <section class="abouts">
-    <div class="about-title">
-    <img src="images/about.png" alt="내사진">
-    <div class="abouttext">
-    <h1>"행복이란 후회가 없는 만족이다!"</h1><br>
-    <p>후회없는 삶을 살기 위해 항상 배우고 노력하는 이혜란입니다!<br>
-    <img src="images/Line 1.png" alt=""><br><br>
-    이젠 컴퓨터<br><br>
-    영상콘텐츠를 활용한 UI/UX웹디자인(웹퍼블리셔) 교육이수<br><br>
-    illustration & Photoshop 교육이수<br><br>
-    1년반 일본 어학연수<br><br>
-    GTQ 2급 취득 / ITQ  A급 취득
-    </p>
-    </div> 
-    </div>
-  </section>
-  <section class="skill">
-  <div class="charts">
-    <div class="chart">
-      <h2 data-num="75">html</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
-      
-    </div>
-    <div class="chart">
-      <h2 data-num="60">css</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
-      
-    </div>
-    <div class="chart">
-      <h2 data-num="90">Photoshop</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
-      
-    </div>
-    <div class="chart">
-      <h2 data-num="80">Illustration</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
+    <header>
+      <div class="header">
+        <div class="mobile-only"></div>
+        <a href="index.html">
+          <img src="images/Subtract.png" alt="logo">
+        </a>
+        <nav class="pc-only">
+          <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="btn" class="mobile-only">
+          <a href="#" class="btn">
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+          </a>
+        </div>
       </div>
-    <div class="chart">
-      <h2 data-num="50">javascript</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
+      <div id="sitemap" class="mobile-only">
+        <nav id="gnb" class="mobile-only">
+          <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <img src="images/Vector.png" class="gnb-img" alt="">
       </div>
-    <div class="chart">
-      <h2 data-num="60">jquery</h2>
-        <svg>
-          <circle cx="60" cy="60" r="50"></circle>
-        </svg>
-    </div>
-  </div>
-</section>
-</main>
-    
+    </header>
+    <section class="container">
+      <div class="abouts">
+        <div class="about-title">
+          <img class="pc-only" src="images/about.png" alt="내사진">
+          <img class="mobile-only" src="images/Group1.png" alt="내사진">
+          <div class="abouttext">
+            <h1>"행복이란 후회가 없는 만족이다!"</h1><br>
+            <p>후회없는 삶을 살기 위해 항상 배우고 노력하는 이혜란입니다!<br>
+              <img src="images/Line 1.png" alt=""><br><br>
+              이젠 컴퓨터<br><br>
+              영상콘텐츠를 활용한 UI/UX웹디자인(웹퍼블리셔) 교육이수<br><br>
+              illustration & Photoshop 교육이수<br><br>
+              1년반 일본 어학연수<br><br>
+              GTQ 2급 취득 / ITQ A급 취득
+            </p>
+
+          </div>
+          <div class="skills mobile-only">
+            <div class="charts">
+              <div class="chart">
+                <h2 data-num="75">html</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+              <div class="chart">
+                <h2 data-num="60">css</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+              <div class="chart">
+                <h2 data-num="90">Photoshop</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="charts">
+              <div class="chart">
+                <h2 data-num="80">Illustration</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+              <div class="chart">
+                <h2 data-num="50">javascript</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+              <div class="chart">
+                <h2 data-num="60">jquery</h2>
+                <svg>
+                  <circle cx="40" cy="40" r="25"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill pc-only">
+          <div class="charts">
+            <div class="chart">
+              <h2 data-num="75">html</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+            <div class="chart">
+              <h2 data-num="60">css</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+            <div class="chart">
+              <h2 data-num="90">Photoshop</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+            <div class="chart">
+              <h2 data-num="80">Illustration</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+            <div class="chart">
+              <h2 data-num="50">javascript</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+            <div class="chart">
+              <h2 data-num="60">jquery</h2>
+              <svg>
+                <circle cx="60" cy="60" r="50"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
+
 </html>

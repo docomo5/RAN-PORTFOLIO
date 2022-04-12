@@ -1,4 +1,9 @@
 $(function(){
+    
+    $('.btn').click(function(){
+        $('#sitemap').toggleClass('on');
+        $('.about').css('background','#000')
+      });
 
     var chart = $('.chart');
 
@@ -20,5 +25,14 @@ $(function(){
             });
 
     });
+
+    var el = document.querySelector('.btn');
+
+    el.onclick = function(){
+        el.classList.toggle('is-active')
+    };
+
+    
+    
 
 })

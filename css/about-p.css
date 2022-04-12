@@ -25,7 +25,7 @@ body{
 
   header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-color: var(--c-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -43,6 +43,7 @@ body{
   }
 
   .header{
+    width: 80%;
     margin: 0 auto;
     height: 90px;
     position: relative;
@@ -56,7 +57,7 @@ body{
     margin-left: 46px;
   }
 
-  .header > ul  {
+  .header > nav > ul  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,49 +65,50 @@ body{
   }
  
   
-  .header > ul > li > a{
+  .header > nav > ul > li > a{
     color: #000;
     width: 188px;
     height: 50px;  
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 188px;
-    height: 50px;
   }
 
-  .header > ul > li:hover {
+  .header > nav > ul > li:hover {
    background-image: url(../images/—Pngtree—colorful\ ink\ watercolor\ painting\ vector_1813278\ 1.png);
+   transform: scale(120%);
   }
   
-  .header > ul > li > a:hover {
+  .header > nav > ul > li > a:hover {
     color: aliceblue;
   }
   
-  .header > ul > li:focus {
+  .header > nav > ul > li:focus {
     background-image: url(../images/—Pngtree—colorful\ ink\ watercolor\ painting\ vector_1813278\ 1.png);
   }
   
-  .header > ul > li > a:active {
+  .header > nav > ul > li > a:active {
     color: aliceblue;
   }
 
   .abouts {
     /* outline: 1px solid red; */
-    margin: 0px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    top: 140px;
     max-width: 1440px;
+    margin: 0px auto;
   }
   
   .about-title{
-    margin-top:140px;
-    min-width: 1342px;
-    overflow: hidden;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    /* min-width: 1342px; */
+    top: 140px;
+    margin-bottom: 140px;
     display: flex;
-    justify-content: flex-start;
+    overflow: hidden;
+    justify-content: space-between;
     align-items: center;
     /* outline: 1px solid red; */
   }
@@ -117,7 +119,6 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin-left: 40px;
     min-height: 451px;
     min-width: 623px;
     animation-duration: 1s;
@@ -125,6 +126,7 @@ body{
     animation-timing-function: linear;
     /* animation-iteration-count: infinite; */
     animation-direction: alternate;
+    /* margin-bottom: 200px; */
   }
 
   .about-title >h1 {
@@ -132,13 +134,13 @@ body{
     font-size: 24px;
     line-height: 35px;
   }
-
+  
   .about-title > p {
     font-weight: 500;
     font-size: 24px;
     line-height: 35px;
   }
-
+  
   @keyframes slidein {
     0% {
       margin-left: 150%;
@@ -147,29 +149,33 @@ body{
     60% {
       margin-left:-80px;
     }
-
+    
     100% {
       margin-left: 40px;
     }
   }
 
-.skill{
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  
+  .skill{
+    margin: 0 auto;
+    padding-top: 60px;
+    max-width: 1440px;
+    /* position: absolute; */
+    width: 100%;
+  /* display: flex;
+  justify-content: center; */
 }  
 
 .charts{
   /* top: 90%; */
-  margin:50px auto;
-  width: 1440px;
+  margin:0 auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .charts .chart{
-  margin: 0 35px;
+  flex-wrap: wrap;
   position: relative;
   display: flex;
   justify-content: center;
